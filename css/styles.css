@@ -22,7 +22,8 @@ body {
   margin: 0 auto;
   max-width: 1110px;
   width: 90%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .flex-row {
   display: -webkit-box;
@@ -31,7 +32,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-height: 100%; }
+  max-height: 100%;
+  padding: 0; }
 
 .flex-item {
   width: 45%;
@@ -61,7 +63,7 @@ body {
     font-size: 2.2rem;
     text-transform: capitalize; }
   .front__form {
-    margin: 50px auto;
+    margin: 50px 0;
     font-size: 0;
     padding: 0;
     text-align: center; }
@@ -102,13 +104,17 @@ body {
   padding: 20px 0; }
   .menu ul {
     margin: 0;
-    display: inline;
-    text-align: right; }
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0; }
   .menu__logo {
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: bold;
-    display: inline; }
+    display: inline-block;
+    position: absolute;
+    left: 0; }
 
 .menu__item {
   display: inline-block; }
@@ -116,7 +122,8 @@ body {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    font-family: 'Aleo', sans-serif; }
   .menu__item:not(:first-child) {
     margin-left: 40px; }
 
@@ -144,12 +151,15 @@ body {
   padding: 30px; }
   .article__title {
     font-family: 'Aleo' sans-serif;
-    font-size: 3.6rem;
-    text-transform: capitalize; }
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6); }
   .article__info {
     font-size: 1.6rem;
     line-height: 1.4;
-    margin: 50px 0; }
+    margin: 50px 0;
+    font-family: 'Aleo', sans-serif;
+    color: rgba(255, 255, 255, 0.6); }
   .article__btn {
     display: inline-block;
     background: -o-linear-gradient(45deg, #496bfe 0%, #496bfe 40%, #5474fd 40%, #5474fd 100%);
@@ -161,7 +171,16 @@ body {
       text-decoration: none;
       font-size: 1.6rem;
       display: block;
-      margin: 20px 40px; }
+      margin: 20px 40px;
+      font-family: 'Aleo', sans-serif; }
+  .article h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    text-transform: capitalize; }
+  .article span {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.6); }
   .article--transp {
     background-color: rgba(51, 51, 51, 0); }
 

@@ -17,14 +17,10 @@ html{
 	font-size: 10px;
 	margin: 0;
 	padding: 0;
-	// height: 100%;
 }
 body{
 	font-family: 'Josefin Sans', sans-serif;
-	// font-size: 1.6rem;
 	color: #fff;
-	// min-height: 100%;
-    // background-color: red;
 }
 
 .container{
@@ -32,11 +28,14 @@ body{
     max-width: 1110px;
     width: 90%;
     height: 100%;
+    position: relative;
+
 }
 .flex-row{
 	display: flex;
 	justify-content: space-between;
 	max-height: 100%;
+	padding: 0;
 }
 .flex-item{
 	width: 45%;
@@ -71,7 +70,7 @@ body{
 		text-transform: capitalize;
 	}
 	&__form{
-		margin: 50px auto;
+		margin: 50px 0;
 		font-size: 0;
 		padding: 0;
 		text-align: center;
@@ -120,16 +119,18 @@ body{
  	padding: 20px 0;
 	& ul{
 		margin: 0;
-		display: inline;
+		display: inline-block;
 		text-align: right;
-
+		position: absolute;
+		right: 0;
 	}
 	&__logo{
 		text-transform: uppercase;
-		// margin: 20px 0;
 		font-size: 2.4rem;
 		font-weight: bold;
-		display: inline;
+		display: inline-block;
+		position: absolute;
+		left: 0;
 	}
  }
  .menu__item{
@@ -139,6 +140,7 @@ body{
  		color: #fff;
  		text-transform: uppercase;
  		font-size: 1.4rem;
+ 		font-family: 'Aleo', sans-serif;
  	}
  	&:not(:first-child){
  		margin-left: 40px;
@@ -175,14 +177,16 @@ body{
 	padding: 30px;
 	&__title{
 	font-family: 'Aleo' sans-serif;
-	font-size: 3.6rem;
-	text-transform: capitalize;
-	// padding: 50px 30px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: rgba(255,255,255,.6);
 	}
 	&__info{
 		font-size: 1.6rem;
 		line-height: 1.4;
 		margin: 50px 0;
+		font-family: 'Aleo', sans-serif;
+		color: rgba(255,255,255,.6);
 	}
 	&__btn{
 		display: inline-block;
@@ -195,7 +199,18 @@ body{
 			font-size: 1.6rem;
 			display: block;
 			margin: 20px 40px;
+			font-family: 'Aleo', sans-serif;
 		}
+	}
+	& h2{
+		font-size: 3.6rem;
+		color: #fff;
+		text-transform: capitalize;
+	}
+	& span{
+		font-size: 2rem;
+		text-transform: capitalize;
+		color: rgba(255,255,255,.6);
 	}
 	&--transp{
 		background-color:  rgba(51,51,51,0);
@@ -210,7 +225,6 @@ body{
 	&__actions{
 		margin: 0;
 		padding: 0;
-		// display: inline;
 	}
 	&__action{
 		display: inline-block;
